@@ -1,0 +1,90 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+img{
+    width: 100%;
+}
+
+body
+{
+    max-width: 512px;
+    margin: 0 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body.guidelines * 
+{
+    border: 1px dashed red;
+}
+
+nav
+{
+    display: flex;
+    min-height: 60px;
+    align-items: center;
+    justify-content: space-between;
+
+    .motto{
+        font-weight: 800;
+    }
+}
+
+.profile
+{
+    max-width: 70%;
+    margin: auto;
+    text-align: center;
+
+    .profile_image 
+    {   
+        
+        img
+        {
+            width: 140px;
+        }
+        
+    }
+
+}
+
+.profile_handler{
+    font-weight: 800;
+}
+
+.stats
+{
+    display: flex;
+
+    .item
+    {
+        width: 100%;
+        min-height: 3rem ;
+    }
+}
+
+.action
+{
+    display: flex;
+    padding: 0.5rem;
+
+    .btn-primary
+    {
+        width: 60%;
+    }
+    .btn
+    {
+        width: 20%;
+        min-height: 3rem ;
+    }
+}
+
+.tab_buttons{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: display;
+}
