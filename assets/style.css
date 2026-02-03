@@ -17,10 +17,10 @@ body
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-body.guidelines * 
+/*body.guidelines * 
 {
     border: 1px dashed red;
-}
+}*/
 
 nav
 {
@@ -70,21 +70,56 @@ nav
 .action
 {
     display: flex;
-    padding: 0.5rem;
+    padding: 0.5rem 0;
+    gap: 0.25rem;
+
+    .wide{
+        flex-grow: 3;
+        flex-shrink: 0;
+    }
 
     .btn-primary
     {
-        width: 60%;
+        
+        background-color: fuchsia;
     }
     .btn
     {
-        width: 20%;
-        min-height: 3rem ;
+        
+        background-color: transparent;
+        padding: 0.5rem;
+        display: block;
+        width: 100%;
     }
 }
 
 .tab_buttons{
     margin-top: 2rem;
     display: flex;
-    justify-content: display;
+    justify-content: space-around;
+    
+    button{
+        font-size: 1.25rem;
+    }
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card{
+    width: 33%;
+    min-height: 200px;
+    img{
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+}
+
+.first-child{
+    border-bottom: 1px solid;
 }
